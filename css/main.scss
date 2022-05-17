@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@use 'maps';
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+$color-principal: #dc3545;
+$color-gris: #3f3f3f;
+
 
 
 
@@ -14,14 +12,25 @@ body{
     background-image: url(../imagen/fondos/fondo\ marmol.jpg);
 }
 
-header p{
-    font-family: fantasy;
+header{
+    h1{
+        font-family: fantasy;
+        font-size: 80px;
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
 }
+
+
+
 
 /*=================NAV=================*/
 
 nav a:hover{
-    background:#dc3545
+    background: $color-principal
 }
 
 
@@ -30,7 +39,7 @@ nav a:hover{
 #menu li > a {
     font-size:18px;
     font-weight:bold;
-    color:#3f3f3f;
+    color: $color-gris
 }
 
 #menu form > button{
@@ -52,7 +61,7 @@ i{
     font-size: 40px;
 
     :hover{
-        color: #9e2d2d;
+        color: $color-principal
 }
 }
 
@@ -80,7 +89,7 @@ a{
         float:left;
         margin-right: 70px;
         margin-bottom:20px;
-        border-right: 3px solid #dc3545
+        border-right: 3px solid $color-principal
 }
 
     p{
@@ -126,7 +135,7 @@ a{
 }
 
 #titulo-formulario {
-    color: #3f3f3f;
+    color: $color-gris
 }
 
 /*=========================CATALOGO================================*/
@@ -230,7 +239,7 @@ a{
 /*=========================FOOTER================================*/
 
 footer {
-    background: #dc3545;
+    background: $color-principal;
     min-height: 100px;
 
     p{
