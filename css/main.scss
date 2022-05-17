@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+    background-image: url(../imagen/fondos/fondo\ marmol.jpg);
+}
+
+header p{
+    font-family: fantasy;
+}
+
+/*=================NAV=================*/
+
+nav a:hover{
+    background:#dc3545
+}
+
+
+/*=================MENU=================*/
+
+#menu li > a {
+    font-size:18px;
+    font-weight:bold;
+    color:#3f3f3f;
+}
+
+#menu form > button{
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+
+/*=================SLIDER DE IMAGENES=================*/
+
+.carousel-inner{
+    max-height: 1200px !important;
+}
+
+/*=================TIPOS DE MATERIALES=================*/
+
+i{
+    font-size: 40px;
+
+    :hover{
+        color: #9e2d2d;
+}
+}
+
+.container{
+    width:85%;
+    max-width: 850px;
+    margin:0 auto;
+    text-align: center;
+}
+
+a{
+    margin: 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.container-index{
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+
+    img{
+        width:400px;
+        float:left;
+        margin-right: 70px;
+        margin-bottom:20px;
+        border-right: 3px solid #dc3545
+}
+
+    p{
+        font-size:18px;
+        font-weight:300;
+        font-size:x-large
+}
+}
+
+@media (max-width:420px){
+    .container-index img{
+    width:90%;
+    }
+}
+
+
+
+
+
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: 30%;
+} 
+
+#seccion-contacto{
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/*=========================CATALOGO================================*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap: 20px;
+    padding: 15px;
+
+    img {
+        width: 100%;
+        height: 400px;
+        display: block;
+        transition: all 100ms ease-out;
+        box-shadow: 0 4px 8px 0 rgb(158, 45, 45), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 130px;
+        
+
+        :hover{
+            transform: scale(1.04);
+    }
+}
+}
+
+@media screen and (min-width:320px){
+    .grid-container{
+        grid-template-columns: repeat(1, 375px);
+    }
+}
+
+@media screen and (min-width:720px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1000px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:1440px){
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width:1640px){
+    .grid-container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+/*=========================TRABAJOS REALIZADOS================================*/
+.galeria{
+    display:flex;
+    padding: 5px;
+    flex-wrap: wrap;
+
+    img{
+        width:100%;
+        border: solid black 1px;
+        margin: 10px; 
+        height: 300px;
+}
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+
+    img{
+        margin-top: 5px;
+}
+}
+
+@media (max-width:1000px){
+    .column{
+        flex:33%;
+    }
+}
+
+
+@media (max-width:800px){
+    .column{
+        flex:50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex:100%;
+    }
+}
+
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: #dc3545;
+    min-height: 100px;
+
+    p{
+        color:#f3f3f3;
+        text-align:center;
+}
+}
+
+#iconos  i {
+    font: size 35px;
+    padding: 0 8px;
+    color:#f3f3f3;
+
+    :hover{
+        color:black
+}
+}
+
+
+
+
+
+
+
+/*=================MEDIA QUERIES PANTALLA ANCHA=================*/
+
+
+
+/*=================MEDIA QUERIES PANTALLA SM=================*/
+
+@media (max-width: 768px) {
+    #intro, #equipo {
+        width: 90% !important;
+    }
+}
+
+#equipo p{
+    display: none;;
+}
+
+.servicio-fila{
+    width:100% !important;
+    text-align: center;
+}
+
+#bg-contacto{
+    top:-110px;
+}
+
+/*=================MEDIA QUERIES PANTALLA  EXTRA SM=================*/
+
+@media (max-width:576px){
+    .icon wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+

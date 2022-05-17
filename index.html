@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/main.css">
+    <title>Bootstrap!</title>
+</head>
+<body>
+
+
+    <!----===================================ENCABEZADO--===================================-->
+
+
+    <header class="container-fluid bg-danger d-flex justify-content-left">
+        <img src="imagen/logo.png" alt="">
+        <p class=" mb-o p-2 fs-1">MARMOLERIA SABATINO</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+        <a class="navbar-brand " href="index.html">Marmoleria Sabatino</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inicio
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#menu">Inicio</a></li>
+                    <li><a class="dropdown-item" href="#intro">Materiales</a></li>
+                    <li><a class="dropdown-item" href="#seccion-contacto">Contacto</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Pages/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Pages/trabajos.html">Trabajos realizados</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    <!--===================================SLIDER DE IMAGENES--==============================-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./imagen/slide/slide (2).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./imagen/slide/slide (3).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./imagen/slide/slide (4).jpg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!----===================================INTRO--===================================-->
+
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3"><span class="text-danger"> Marmoleria Sabatino</span></h1>
+    <p class="p-3 fs-4"> Contacta con nosotros por mensaje, telefono o viniendo directamente a nuestro local</p>
+</section>
+
+    <!--===================================TIPOS MATERIALES===================================-->
+
+    <div class="row">
+        <div class="container-index">
+        <section>
+            <h2>Marmol</h2>
+            <img src="./imagen/marmol.jpg" alt="marmol">
+            <p>Las mesadas de mármol son muy elegantes y distinguidas debido a sus atractivos colores, aunque son menos resistentes que las de granito. </p>
+            <p>Se recomienda su uso para mesadas de baño pero no para cocinas. También se usa como revestimiento de pisos y paredes. </p><br>
+<br>
+            <h2>Granito</h2>
+            <img src="./imagen/granito.jpg" alt="granito">
+            <p>El granito proviene directo de la tierra y no requiere mucho procesamiento antes de estar listo para ser comprado e instalado en su hogar</p>
+            <p>Una cubierta hecha de granito es una de las más resistentes y hermosas superficies que se pueden encontrar en este planeta.</p><br><br>
+<br>
+            <h2>Cuarzo</h2>
+            <img src="./imagen/cuarzo.jpg" alt="cuarzo">
+            <p>A diferencia del mármol y el granito, los cuales son extraídos, pulidos y vendidos, una cubierta de cuarzo tiene que ser fabricada. La razón es que el cuarzo utilizado para encimeras, es cerca de un 90% cuarzo natural que ha sido fundido y mezclado.</p>
+        </div>
+        </section>
+    </div><br><br><br>
+
+<!--========================================================== -->
+                        <!-- SECCION CONTACTOS-->
+<!--========================================================== -->
+
+<section id="seccion-contacto" class="border-bottom border-secondary border-2">
+    <div id="bg-contactos">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#dc3545" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    </div>
+
+
+<!--========================================================== -->
+                        <!-- CONTENEDOR DEL FORMULARIO -->
+<!--========================================================== -->
+
+    <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+        <div class="text-center mb-4" id="titulo-formulario">
+        <div><img src="./img/support.png" alt="" class="img-fluid ps-5"></div>
+        <h2>Contactanos</h2>
+        </div>
+
+    
+
+        <form   method="POST" data-netlify="true" action="#">     
+            <div class= "mb-3">           
+                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico">
+            </div>
+
+            
+            <div class="mb-3">            
+                <input type="input" class="form-control" id="name" name="name" placeholder="Nombre y Apellido">
+            </div>
+        
+
+            <div class="mb-3">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+            </div>
+
+            <div class="mb-3">       
+            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Escriba su mensaje"></textarea>
+            </div>
+
+            <div class="mb-3">
+            <button type="submit" class=" btn btn-danger w-100 fs-5">Enviar Mensaje</button>
+            </div>
+        </form>
+    
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!--========================================================== -->
+                        <!--FOOTER-->
+<!--========================================================== -->
+
+
+
+
+    <footer class="text-white text-center text-lg-start bg-danger">
+    <!-- Grid container -->
+    <div class="container p-4">
+    <!--Grid row-->
+    <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+
+
+        <div class="mt-4">
+            <!-- Whatsapp -->
+            <a type="button" class="btn btn-floating btn-danger btn-lg" href="https://www.instagram.com/marmoleriasabatino/"><i class="fa-brands fa-instagram"></i></a>
+            <!-- Instagram -->
+            <a type="button" class="btn btn-floating btn-danger btn-lg" href="https://wa.me/+541130255035"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Benito Perez Galdós 10.044</span>
+            </li>
+            <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">marmoleriasabatino@hotmail.com</span>
+            </li>
+            <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+54 11 3025 5035</span>
+            </li>
+
+        </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Horarios de atención</h5>
+
+        <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+            <tr>
+                <td>Lunes - Viernes</td>
+                <td>8am - 6pm</td>
+            </tr>
+
+            </tbody>
+        </table>
+        </div>
+        <!--Grid column-->
+    </div>
+    <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="fs-5 px-3  pt-3">Marmoleria Sabatino. &copy; Todos Los Derechos Reservados 2022</p>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</div>
+<!-- End of .container -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
