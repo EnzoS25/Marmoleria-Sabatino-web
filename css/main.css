@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Playfair Display", serif;
   overflow-x: hidden;
   background-image: url(../imagen/fondos/fondo\ marmol.jpg);
 }
 
-header p {
+header h1 {
   font-family: fantasy;
+  font-size: 80px;
+  text-align: center;
+}
+header img {
+  display: block;
+  margin: auto;
 }
 
 /*=================NAV=================*/
@@ -42,7 +41,7 @@ i {
   font-size: 40px;
 }
 i :hover {
-  color: #9e2d2d;
+  color: #dc3545;
 }
 
 .container {
