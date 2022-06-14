@@ -1,3 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: "Playfair Display", serif;
   overflow-x: hidden;
@@ -121,8 +128,8 @@ a {
   box-shadow: 0 4px 8px 0 rgb(158, 45, 45), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 130px;
 }
-.grid-container img :hover {
-  transform: scale(1.04);
+.grid-container img:hover{
+  border: 5px solid #dc3545;
 }
 
 @media screen and (min-width: 320px) {
@@ -151,39 +158,42 @@ a {
   }
 }
 /*=========================TRABAJOS REALIZADOS================================*/
-.galeria {
-  display: flex;
+
+
+.galeria{
+  display:flex;
   padding: 5px;
   flex-wrap: wrap;
 }
-.galeria img {
-  width: 100%;
+
+.galeria img{
+  width:100%;
   border: solid black 1px;
-  margin: 10px;
+  margin: 10px; 
   height: 300px;
 }
 
-.column {
+.column{
   flex: 25%;
   padding: 5px;
 }
-.column img {
+
+.column img{
   margin-top: 5px;
 }
+#galeria img:hover{
+  border: 5px solid #f3f3f3;
+}
 
-@media (max-width: 1000px) {
-  .column {
-    flex: 33%;
+@media (max-width:800px){
+  .column{
+      flex:50%;
   }
 }
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-  }
-}
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
+
+@media (max-width: 600px){
+  .column{
+      flex:100%;
   }
 }
 /*=========================FOOTER================================*/
